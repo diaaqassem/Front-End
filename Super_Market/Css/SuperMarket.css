@@ -1,0 +1,903 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+body {
+  font-family: Georgia;
+}
+/* ***************************navigation bar********************************** */
+nav {
+  width: 25%;
+  height: 25%;
+  margin-left: 2%;
+
+  z-index: 2;
+}
+nav .content {
+  z-index: 9999;
+  background-image: url(../Images/Pampers-Logo.png);
+  background-size: 100% 100%;
+  margin-left: 2%;
+  cursor: pointer;
+  width: 27%;
+  height: 23%;
+  border: solid white 1px;
+  border-radius: 10%;
+  box-shadow: 2px 3px 5px wheat;
+  /* position: relative; */
+}
+
+.nbar {
+  z-index: 3;
+  background-color: aliceblue;
+  /* background-image: url(../Images/Pampers-Logo.png); */
+  background-size: 100% 100%;
+  width: 100%;
+  border-radius: 10%;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.nbar a {
+  display: block;
+  text-decoration: none;
+  cursor: default;
+  font-style: italic;
+}
+/* nav:hover .nbar{
+opacity: 1; */
+/* background-color: aliceblue; */
+
+/* ***************************headwe*********************** */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Images/Arabic-supermarket.jpg);
+  background-size: 100% 100%;
+}
+
+/* ***************************Cheeses**************************** */
+.big {
+  background-color: rgba(1, 1, 1, 0.2);
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  z-index: 6;
+}
+
+.moon i {
+  color: black;
+  width: 5%;
+  height: 10%;
+
+  position: fixed;
+}
+.moon1 {
+  width: 10%;
+  height: 30%;
+}
+.moon {
+  position: relative;
+  top: 58.5%;
+
+  transition: all 2s;
+}
+.moon1 i:hover {
+  color: gray;
+}
+.move {
+  position: absolute;
+  bottom: 35%;
+  left: 43%;
+}
+.product_cheese {
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  background-size: 100% 100%;
+}
+.product_cheese button {
+  padding: 20px 30px;
+  border: dashed pink 3px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  margin-top: 25%;
+  font-weight: bolder;
+  transition: all 1s;
+}
+.product_cheese button:hover {
+  background-color: #0099ff;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.pil {
+  width: 3%;
+  height: 10%;
+  border-radius: 48%;
+  border: solid rgb(255, 255, 255) 2px;
+  position: absolute;
+  left: 48.5%;
+  right: 48.5%;
+  bottom: 4%;
+}
+.dot {
+  position: relative;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  animation: move 2s infinite;
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(8px);
+  }
+}
+/* ****************************type cheeses***************************** */
+
+@media all and (max-width: 1000px) {
+  .pil {
+    width: 5%;
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+  }
+}
+@media all and (max-width: 577px) {
+  .move {
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+  }
+  .home2 button {
+    position: relative !important;
+    left: 2.9% !important;
+  }
+
+  .container {
+    width: 65%;
+  }
+  .cheese1 .img1,
+  .cheese1 .img2,
+  .cheese1 .img3,
+  .cheese1 .img4,
+  .cheese1 .img5,
+  .cheese1 .img6 {
+    margin-bottom: 5%;
+  }
+  .caption {
+    padding-top: 15%;
+  }
+  nav {
+    width: 35%;
+  }
+  .pil {
+    width: 6%;
+    position: absolute;
+    left: 54%;
+    bottom: 4%;
+  }
+  .dot {
+    position: relative;
+    top: 20%;
+    left: 38%;
+  }
+}
+.cheese {
+  /* margin: 10%;
+    margin-left: 5%;
+    margin-right: 5%; */
+  border-radius: 10%;
+}
+
+.cheese img {
+  /* width: 100%;
+height: 100%;
+margin: 10%;
+margin-left: 5%;
+margin-right: 5%; */
+  border-radius: 10%;
+}
+
+.caption {
+  font-family: Castellar;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  padding-top: 10%;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 3s;
+  border-radius: 10%;
+}
+
+.img1:hover .caption,
+.img2:hover .caption,
+.img3:hover .caption,
+.img4:hover .caption,
+.img5:hover .caption,
+.img6:hover .caption {
+  opacity: 1;
+}
+
+.cheese1 .img1,
+.cheese1 .img2,
+.cheese1 .img3,
+.cheese1 .img4,
+.cheese1 .img5,
+.cheese1 .img6 {
+  margin-bottom: 5%;
+}
+
+@media all and (max-width: 400px) {
+}
+
+/* #first{
+        overflow: hidden;
+        transform: translate(1300px,0);
+        transition: all 2.5s;
+  
+    } */
+
+.cheese1 .img1 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 2.5s;
+}
+.cheese1 .img2 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 3.5s;
+}
+.cheese1 .img3 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 4.5s;
+}
+.cheese1 .img4 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 4s;
+}
+.cheese1 .img5 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 4.5s;
+}
+.cheese1 .img6 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 5s;
+}
+
+.gamd:hover .cheese1 .img1 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+
+.gamd:hover .cheese1 .img2 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+
+.gamd:hover .cheese1 .img3 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+
+.gamd:hover .cheese1 .img4 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+
+.gamd:hover .cheese1 .img5 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+
+.gamd:hover .cheese1 .img6 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+
+.item {
+  box-shadow: 4px 6px 10px gray;
+  border-radius: 10%;
+}
+
+/* **************************contactme****************************** */
+.contact {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.contact body {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(
+    45deg,
+    rgb(224, 245, 255) 30%,
+    rgb(220, 220, 255) 60%,
+    orange 50%,
+    rgb(121, 121, 121) 50%,
+    white 50%
+  );
+}
+#about1 p:hover .contact body {
+  background-image: linear-gradient(
+    45deg,
+    rgb(243, 243, 243) 30%,
+    rgb(139, 212, 255) 60%,
+    rgb(107, 109, 255) 50%,
+    white 50%
+  );
+}
+.home {
+  width: 98%;
+  height: 13%;
+  background-color: transparent;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.home img {
+  border: solid white 1px;
+  border-radius: 10%;
+  box-shadow: 2px 3px 5px wheat;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  opacity: 0;
+  right: 33%;
+}
+
+.home2 {
+  width: 100% !important;
+  height: 100vh !important;
+
+  background-image: url(../Images/contact.jpg);
+  background-size: 100% 100%;
+  text-align: center;
+}
+.home2 button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.home2 button {
+  padding: 10px 20px;
+
+  /* border:dashed white 3px; */
+  border-radius: 8px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+
+  right: 0.9%;
+  font-weight: bolder;
+  transition: all 1s;
+}
+.home2 button:hover {
+  background-color: #0099ff;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.home2 {
+  position: relative;
+  top: 30%;
+  color: #ffffff;
+}
+.home2 h1::after {
+  content: "";
+  animation: slider 10s linear infinite;
+}
+@keyframes slider {
+  0% {
+    content: "D|";
+  }
+  1% {
+    content: "Di|";
+  }
+  2% {
+    content: "Dia|";
+  }
+  3% {
+    content: "Diaa|";
+  }
+  4% {
+    content: "Diaa K|";
+  }
+  5% {
+    content: "Diaa Ka|";
+  }
+  6% {
+    content: "Diaa Kas|";
+  }
+  7% {
+    content: "Diaa Kass|";
+  }
+  8% {
+    content: "Diaa Kassem|";
+  }
+  9% {
+    content: "Diaa Kassem.|";
+  }
+  10% {
+    content: "Diaa Kassem.|";
+  }
+  11% {
+    content: "Diaa Kassem.|";
+  }
+  12% {
+    content: "Diaa Kassem.|";
+  }
+  13% {
+    content: "Diaa Kassem.|";
+  }
+  14% {
+    content: "Diaa Kas|";
+  }
+  15% {
+    content: "Diaa Ka|";
+  }
+  16% {
+    content: "Diaa K|";
+  }
+  17% {
+    content: "Diaa|";
+  }
+  18% {
+    content: "Diaa|";
+  }
+  19% {
+    content: "Dia|";
+  }
+  20% {
+    content: "Di|";
+  }
+  21% {
+    content: "D|";
+  }
+  22% {
+    content: "|";
+  }
+  23% {
+    content: "A|";
+  }
+  24% {
+    content: "A |";
+  }
+  25% {
+    content: "A P|";
+  }
+  26% {
+    content: "A Pr|";
+  }
+  27% {
+    content: "A Pro|";
+  }
+  28% {
+    content: "A Prog|";
+  }
+  29% {
+    content: "A Progr|";
+  }
+  30% {
+    content: "A Progra|";
+  }
+  31% {
+    content: "A Program|";
+  }
+  32% {
+    content: "A Programm|";
+  }
+  33% {
+    content: "A Programme|";
+  }
+  34% {
+    content: "A Programmer|";
+  }
+  35% {
+    content: "A Programmer|";
+  }
+  36% {
+    content: "A Programmer.|";
+  }
+  37% {
+    content: "A Programmer.|";
+  }
+  38% {
+    content: "A Programmer.|";
+  }
+  39% {
+    content: "A Programmer.|";
+  }
+  40% {
+    content: "A Programmer.|";
+  }
+  41% {
+    content: "A Programme|";
+  }
+  42% {
+    content: "A Program|";
+  }
+  43% {
+    content: "A Progra|";
+  }
+  44% {
+    content: "A Progr|";
+  }
+  45% {
+    content: "A Prog|";
+  }
+  46% {
+    content: "A Pro|";
+  }
+  47% {
+    content: "A Pr|";
+  }
+  48% {
+    content: "A P|";
+  }
+  49% {
+    content: "A |";
+  }
+  50% {
+    content: "A|";
+  }
+  51% {
+    content: "|";
+  }
+  52% {
+    content: "W|";
+  }
+  53% {
+    content: "We|";
+  }
+  54% {
+    content: "Wep|";
+  }
+  55% {
+    content: "Wep |";
+  }
+  56% {
+    content: "Wep p|";
+  }
+  57% {
+    content: "Wep pa|";
+  }
+  58% {
+    content: "Wep Pag|";
+  }
+  59% {
+    content: "Wep Page|";
+  }
+  60% {
+    content: "Wep Pages|";
+  }
+  61% {
+    content: "Wep Pages|";
+  }
+  62% {
+    content: "Wep Pages.|";
+  }
+  63% {
+    content: "Wep Pages.|";
+  }
+  64% {
+    content: "Wep Pages.|";
+  }
+  65% {
+    content: "Wep Pages.|";
+  }
+  66% {
+    content: "Wep Pages.|";
+  }
+  67% {
+    content: "Wep Pages|";
+  }
+  68% {
+    content: "Wep Page|";
+  }
+  69% {
+    content: "Wep Pag|";
+  }
+  70% {
+    content: "Wep Pa|";
+  }
+  71% {
+    content: "Wep P|";
+  }
+  72% {
+    content: "Wep |";
+  }
+  73% {
+    content: "Wep|";
+  }
+  74% {
+    content: "We|";
+  }
+  75% {
+    content: "W|";
+  }
+  77% {
+    content: " |";
+  }
+  100% {
+    content: "|";
+  }
+  /* 68% {
+          content: "A Graphic Designer|";
+        }
+        69% {
+          content: "A Graphic Designer.|";
+        }
+        70% {
+          content: "A Graphic Designer|";
+        }
+        71% {
+          content: "A Graphic Designe|";
+        }
+        72% {
+          content: "A Graphic Design|";
+        }
+        73% {
+          content: "A Graphic Desig|";
+        }
+        74% {
+          content: "A Graphic Desi|";
+        }
+        75% {
+          content: "A Graphic Des|";
+        }
+        76% {
+          content: "A Graphic De|";
+        }
+        77% {
+          content: "A Graphic D|";
+        }
+        78% {
+          content: "A Graphic |";
+        }
+        79% {
+          content: "A Graphic|";
+        }
+        80% {
+          content: "A Graphi|";
+        }
+        81% {
+          content: "A Graph|";
+        }
+        82% {
+          content: "A Grap|";
+        }
+        83% {
+          content: "A Gra|";
+        }
+        84% {
+          content: "A Gr|";
+        }
+        85% {
+          content: "A G|";
+        }
+        86% {
+          content: "A |";
+        }
+        87% {
+          content: "A|";
+        }
+        88% {
+          content: "|";
+        }
+        89% {
+          content: "";
+        }
+        90% {
+          content: "";
+        }
+        91% {
+          content: "";
+        }
+        92% {
+          content: "";
+        }
+        93% {
+          content: "";
+        }
+        94% {
+          content: "";
+        }
+        95% {
+          content: "";
+        }
+        96% {
+          content: "";
+        }
+        97% {
+          content: "";
+        }
+        98% {
+          content: "";
+        }
+        99% {
+          content: "";
+        }
+        100% {
+          content: "";
+        } */
+}
+
+#about1 a {
+  color: rgb(255, 255, 255);
+  height: 42px;
+  width: 42px;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid #d4d4d4;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#about a i {
+  color: white !important;
+}
+
+#about1 a:hover {
+  color: #e65f78;
+  border: 2px solid #e65f78;
+}
+#about1 p {
+  /* font-weight: bold; */
+  color: #ffffff !important;
+  font-size: large;
+}
+#about1 img {
+  width: 100%;
+  border-radius: 5%;
+  height: 80%;
+}
+
+.big2 {
+  background-color: rgb(134 144 185);
+  width: 0%;
+  height: 100%;
+
+  transition: all 5s;
+  z-index: 6;
+}
+.big21,
+.big22 {
+  background-color: rgb(134 144 185);
+  width: 0%;
+  height: 100%;
+
+  z-index: 6;
+  transition: all 5s;
+}
+.big23 {
+  background-color: rgb(134 144 185);
+  width: 0%;
+  height: 100%;
+  transition: all 5s;
+  z-index: 6;
+}
+#about1:hover .big23 {
+  width: 50%;
+}
+#about1:hover .big21 {
+  width: 99.9%;
+}
+#about1:hover .big22 {
+  width: 99.9%;
+}
+#about1:hover .big2 {
+  width: 99%;
+}
+.frame {
+  opacity: 0;
+  transition: all 3s;
+}
+#about1:hover .frame {
+  opacity: 1;
+}
+/* @keyframes frame {
+    0%{
+        content: "0%";
+    }
+    5%{
+        content: "2%";
+    }
+    10%{
+        content: "3%";
+    }
+    15%{
+        content: "4%";
+    }
+    20%{
+        content: "0%";
+    }
+    25%{
+        content: "0%";
+    }
+    30%{
+        content: "0%";
+    }
+    35%{
+        content: "0%";
+    }
+    40%{
+        content: "0%";
+    }
+    100%{
+        content: "100%";
+    }
+  } */
+
+.skill {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.scroll {
+  width: 1.7rem;
+  position: relative;
+  left: 47%;
+  top: 87%;
+}
+/* .big0{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0,.4);
+    text-align: center;
+    z-index: 100000000000;
+transition: all 2s;
+}
+#about img:hover .big0{
+    opacity: 1;
+} */
+
+.gamd {
+  overflow-x: hidden;
+}
+.gamd1 {
+  overflow-x: hidden;
+  /* background-image: url(../Images/contact.jpg) !important; */
+  background-color: #000 !important;
+  background-repeat: no-repeat !important;
+  color: #d4d4d4 !important;
+  background-size: 100% 100% !important;
+  background: fixed;
+}
+#about1 {
+  overflow: hidden;
+  transform: translate(1300px, 0);
+  transition: all 2s;
+}
+.gamd1:hover #about1 {
+  overflow: inherit;
+  transform: translate(0, 0);
+}
+#about1 p {
+  opacity: 0;
+  font-family: Castellar;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  transition: all 4s;
+}
+#about1:hover p {
+  opacity: 1;
+}
