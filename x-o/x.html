@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x-o</title>
+    <style>
+        .wrapper{width:400px;
+        height:400px;
+        margin: 100px auto
+        
+        }
+        .square{
+        width:120px;
+        height:120px;
+        background: rgba(17, 2, 36, 0.808);
+        margin:5px;
+        font-size:108px;
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        float: left
+        }
+        .body{
+            background:black;
+        }
+        
+        
+        
+        </style>
+
+
+
+
+</head>
+<body   style="background-image:url(js4.jpg)"width="100%" height="100%";  >
+
+    <audio controls>
+        <source src="كليب مهرجان اندال اندال ( مع انها لسعة شوية ) احمد موزه السلطان - انتاج لايك استديو.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="wrapper">
+        <div class="square" id="A1" onclick="insert(this.id)"></div>
+        <div class="square" id="A2" onclick="insert(this.id)"></div>
+        <div class="square" id="A3" onclick="insert(this.id)"></div>
+        <div class="square" id="A4" onclick="insert(this.id)"></div>
+        <div class="square" id="A5" onclick="insert(this.id)"></div>
+        <div class="square" id="A6" onclick="insert(this.id)"></div>
+        <div class="square" id="A7" onclick="insert(this.id)"></div>
+        <div class="square" id="A8" onclick="insert(this.id)"></div>
+        <div class="square" id="A9" onclick="insert(this.id)"></div>
+        </div>
+        <script>
+    var turn = true;  //true means x turn
+    var squares = [];
+    var speed=5;
+
+var yourname=prompt("welcome ","player 1 ");
+alert ("welcome :"+yourname);
+var yourname=prompt("welcome ","player 2 ");
+alert ("welcome :"+yourname);
+
+
+function reset(A,B,C){
+document.getElementById('A'+A).style.color="rgb(109, 109, 109)";
+document.getElementById('A'+B).style.color="rgb(109, 109, 109)";
+document.getElementById('A'+C).style.color="rgb(109, 109, 109)";
+setTimeout(function(){location.reload()},2000);
+}
+
+    function checkWinner(){
+for(var i=1; i<=9; i++){
+    squares[i] = document.getElementById('A'+i).innerHTML;
+}
+    
+//check horizontal
+if(squares[1]==squares[2] && squares[2]==squares[3] && squares[1]!=""){
+    alert(squares[1] + 'cogratolation :' + yourname);
+    reset(1,2,3);
+}
+if(squares[4]==squares[5] && squares[5]==squares[6] && squares[4]!=""){
+    alert( squares[1] + 'cogratolation :' + yourname);
+    reset(4,5,6);
+}
+if(squares[7]==squares[8] && squares[8]==squares[9] && squares[7]!=""){
+    alert( squares[1] + 'cogratolation :' + yourname);
+    reset(7,8,9);
+}
+    
+    //check vertical
+    if(squares[1]==squares[4] && squares[4]==squares[7] && squares[1]!=""){
+    alert(squares[1] + 'cogratolation :' + yourname);
+    reset(1,4,7);
+}
+if(squares[2]==squares[5] && squares[5]==squares[8] && squares[2]!=""){
+    alert( squares[1] + 'cogratolation :' + yourname);
+    reset(2,5,8);
+}
+if(squares[3]==squares[6] && squares[6]==squares[9] && squares[3]!=""){
+    alert(squares[1] + 'cogratolation :' + yourname);
+    reset(3,6,9);
+}
+//check diagonal
+if(squares[1]==squares[5] && squares[5]==squares[9] && squares[1]!=""){
+    alert(squares[1] + 'cogratolation :' + yourname);
+    reset(1,5,9);
+}
+if(squares[3]==squares[5] && squares[5]==squares[7] && squares[3]!=""){
+    alert( squares[1] + 'cogratolation :' + yourname);
+    reset(3,5,7);
+}
+}
+    
+function insert(id){
+    var S = document.getElementById(id);
+if(turn && S.innerHTML==""){
+    S.innerHTML="X";
+    turn = !turn;
+}else if(!turn && S.innerHTML==""){
+    S.innerHTML="O";
+    turn = !turn;
+}
+checkWinner();
+}
+
+
+
+        </script>
+</body>
+</html>
