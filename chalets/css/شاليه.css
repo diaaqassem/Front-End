@@ -1,0 +1,344 @@
+* {
+  font-family: Microsoft Sans Serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+nav {
+  z-index: 3;
+}
+.home {
+  width: 100%;
+}
+.house1 {
+  height: 30%;
+  /* border: solid rgba(0, 0, 0, .5) 125px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 7rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/* **********************شاليه1********************* */
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.caption1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.caption1 button {
+  z-index: 3;
+}
+.caption1 button a {
+  text-decoration: none;
+  color: white;
+}
+.caption1 button a:hover {
+  color: black;
+}
+.caption1:hover {
+  opacity: 1;
+}
+
+.project-card {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 5px 25px whitesmoke;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 20px;
+  width: 13.25rem;
+  text-align: center;
+  transition: all 0.7s;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.row {
+  text-align: center;
+}
+.container {
+  text-align: center;
+}
+
+/* .conta{
+    width: 80%;
+    margin: auto;
+
+} */
+
+@media all and (max-width: 770px) {
+  /* .navigation{
+        position: fixed;
+        margin-bottom: 5%;
+    } */
+  .section {
+    display: none !important;
+  }
+  .conta {
+    width: 80%;
+    margin: auto;
+  }
+  .house1 {
+    right: 0;
+  }
+  .center {
+    justify-content: center;
+  }
+  .home2 {
+    display: inherit !important;
+  }
+  footer {
+    display: inherit !important;
+  }
+  .content {
+    display: none !important;
+  }
+}
+@media all and (max-width: 400px) {
+  .section {
+    display: none !important;
+  }
+  .container {
+    width: 50%;
+  }
+  .project-card {
+    width: 27rem !important;
+  }
+}
+
+.section {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: aliceblue;
+  position: relative;
+  position: fixed;
+  left: 78%;
+  z-index: 2;
+  color: black;
+  text-align: left;
+}
+.section p {
+  text-align: left;
+  position: relative;
+  top: 15%;
+  right: 20%;
+}
+
+.sectionChild {
+  position: relative;
+  top: 3%;
+  right: 35%;
+}
+.section img {
+  width: 100%;
+  height: 62.5%;
+  position: relative;
+  top: 10%;
+}
+@media all and (max-width: 987px) {
+  .section {
+    left: 72%;
+    display: none;
+  }
+  .project-card {
+    width: 10rem !important;
+  }
+  .house1 {
+    text-align: center;
+  }
+  .sectionChild {
+    position: relative;
+    top: 3%;
+    right: 30%;
+  }
+
+  .section {
+    display: none !important;
+  }
+
+  .house1 {
+    right: 0;
+  }
+  .center {
+    justify-content: center;
+  }
+  .home2 {
+    display: inherit !important;
+  }
+  footer {
+    display: inherit !important;
+  }
+  .content {
+    display: none !important;
+  }
+  .project-card {
+    width: 10rem;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .center {
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 1370px) and (min-width: 1200px) {
+  .section {
+    width: 35%;
+    left: 70%;
+  }
+}
+
+@media all and (max-width: 1180px) and (min-width: 1000px) {
+  .container {
+    width: 69% !important;
+  }
+  .section {
+    width: 30% !important;
+    left: 70% !important;
+  }
+}
+@media all and (max-width: 1185px) and (min-width: 1170px) {
+  .container {
+    width: 66% !important;
+  }
+}
+@media all and (max-width: 999px) and (min-width: 988px) {
+  .container {
+    width: 80% !important;
+  }
+  .section {
+    width: 30% !important;
+    left: 70% !important;
+  }
+}
+@media all and (max-width: 1140px) and (min-width: 990px) {
+  /* .conta{
+        width: 70%;
+    } */
+  .section {
+    width: 29% !important;
+    left: 71% !important;
+  }
+}
+.home2 {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+.home2 img {
+  width: 65%;
+  height: 66%;
+}
+.content {
+  background-image: url(../images/cotact.gif);
+  background-size: 100% 100%;
+
+  /* border-radius: 20%;
+position: relative;
+left: 40%; */
+  margin: 0;
+  width: 5% !important;
+  height: 9% !important;
+}
+/* ----------------------------------view------------------ */
+
+.textView {
+  text-align: left;
+}
+.textView p {
+  font-size: larger;
+}
+.house2 {
+  /* border: solid rgba(0, 0, 0, .5) 125px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.house4 img {
+  border-radius: 50%;
+}
+.bt {
+  font-weight: bolder;
+  border: solid rgb(93, 0, 255) 1px;
+
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  width: 98%;
+  transition: all 0.7s;
+}
+.bt:hover {
+  transform: scale(1.1);
+  border: solid rgb(255, 255, 255) 1px;
+}
+.moon2 {
+  text-decoration: none;
+  color: white;
+}
+.moon2:hover {
+  color: white;
+}
+h5 {
+  font-weight: bold;
+  font-size: large;
+}
+.moon2:hover i {
+  color: red;
+}
+
+/* ----------------footer-------------------- */
+
+.qr {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#contact {
+  position: relative;
+  bottom: 8%;
+  display: none;
+}
+#contact a i {
+  color: white;
+  transition: all 0.6s;
+}
+#contact a i:hover {
+  color: rgb(21, 0, 255);
+}
+.section a i {
+  color: rgb(0, 0, 0);
+  transition: all 0.6s;
+}
+.section a i:hover {
+  color: rgb(21, 0, 255);
+}
