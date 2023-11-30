@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+::selection {
+    background-color: #F2BF91;
+    color: #000000;
+}
+
+#mouse {
+    background-color: #F2BF91;
+    width: 25px;
+    background-image: url(../image/download.png);
+    background-size: 100% 100%;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 99999999999999999999;
+}
+
+body {
+    cursor: none;
+    /* background-image: url(../image/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png);
+    background-size: 100% 100%; */
+ }
+
+ .d-flex {
+    display: flex;
+    justify-content: center;
+    /* background-color:  #56A679; */
+ }
+
+ .d-inherit {
+    display: flex !important ;
+ }
+
+ .d-none {
+    display: none ;
+ }
+/* --------------------------nav----------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:#000;
+    /* width: 90%; */
+    margin: auto;
+    /* border-radius: 30px; */
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.width {
+    width: 100%;
+    height: 3.7rem;
+    transition: all 2s;
+    position: fixed;
+    border-bottom-left-radius: 0px;
+    z-index: -1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transform: translate(100%, 0);
+}
+
+/* 
+ nav:hover .width {
+    transform: translate(0%,0%);
+    background-color: #000000;
+    color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+ } */
+
+.nav {
+    width: 100%;
+    font-family: Calibri Light;
+}
+
+.nav ul {
+    display: flex;
+    margin-right: 1%;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .4s;
+}
+
+.nav ul li a:hover {
+    color: #f0ae48;
+    letter-spacing: .3px;
+}
+
+.nav ul li a:focus {
+    color: #f0ae48;
+    letter-spacing: .3px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo h2 {
+    text-align: center;
+    cursor: grab;
+    z-index: 6;
+    font-size: xx-large;
+    font-family: Urdu Typesetting;
+    color: #f0ae48;
+}
+/* --------------------------------------88888888888888888888888888888888888888888888888888888888888888 */
+ .new {
+    font-family: Urdu Typesetting;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-top: 7rem;
+        border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+ }
+
+ .big-new {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all .5s;
+ }
+
+ /* .new:hover .big-new {
+    background-color: #007A3D;
+    color: white;
+ } */
+
+ .small-1,
+ .small-3 {
+    width: 165px;
+    background-image: url(../image/flag-of-united-palestine-png-23.png);
+    background-size: 100% 100%;
+    height: 75px;
+    border-bottom-left-radius: 3rem;
+    background-color: #BF622C;
+ }
+
+ .qods {
+    width: 100%;
+    height: 0%;
+    background-image: url(../image/downloadqods.jpg);
+    background-size: 100% 100%;
+    border-bottom-left-radius: 3rem;
+
+    transition: all .5s;
+ }
+
+ .small-1:hover .qods {
+    height: 100%;
+ }
+
+ .small-3:hover .qods {
+    height: 100%;
+ }
+
+ .new hr {
+    top: 0;
+    border: 1px solid gray;
+ }
+
+ .new:hover hr {
+    border-radius: 0;
+    height: 2px;
+    width: 90%;
+    margin: auto;
+}
+
+
+ .small-2 {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 600;
+ }
+
+ .small-4 p {
+    font-size: 4rem;
+    font-family: Courier New;
+    padding: 10px;
+    font-weight: 600;
+    transition: all .3s;
+ }
+
+ .small-4 p:hover {
+    letter-spacing: 2px;
+ }
+
+ .small-5 img {
+    border-radius: 50%;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    left: 1rem ;
+    animation: move 3s infinite;
+ }
+
+ .small-5 {
+    text-align: center;
+ }
+
+ .contact {
+    display: block;
+    text-decoration: none;
+    color: #D01B2F;
+ }
+
+ @keyframes move {
+    0%{
+        transform: rotate(45deg);
+    }
+    /* 25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(265deg);
+    } */
+    100%{
+        transform: rotate(365deg);
+    }
+
+ }
+
+/* ----------------------------------اثشيثق------------------------------------- */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-size: 100% 100%;
+    padding-top: 3.71rem;
+    /* background-image: url(../image/giphy.gif); */
+    /* border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px; */
+
+}
+
+.all {
+    width: 100%;
+    height: 90vh; 
+     /* background-image: linear-gradient(#007A3D, white,black,red);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px; */
+    /* background-color: rgba(140, 89, 59,.4); */
+}
+
+h1 {
+    color:#9b9b9bea;
+    vertical-align: middle;
+    text-indent: 1rem;
+    text-shadow: 2px 1px 1px black;
+    word-spacing: 0.5rem;
+    font-family: Traditional Arabic;
+    font-size: 6rem;
+    position: relative;
+    top: 10rem;
+    font-weight: 500;
+    /* left: 20em; */
+    transition: all 1s;
+    font-family: Urdu Typesetting;
+    text-align: center;
+}
+
+/* header:hover h1,.h1 {
+    left: 0;
+  } */
+
+.h1 {
+    top: 6rem;
+    transition: all 1.4s;
+    color: red;
+    /* left: 20em; */
+}
+
+/* ------------------------------first section----------------------------------------- */
+.first {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3rem;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.first-one {
+    width: 40%;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.first-one img {
+    width: 100%;
+    height: 70%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transform: translate(-45%, 0);
+    transition: all .8s;
+
+}
+
+.first:hover .first-one img {
+    transform: translate(0, 0);
+
+}
+
+.first-two {
+    width: 60%;
+    position: relative;
+    top: 5rem;
+}
+
+.first-two p {
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    margin-top: 1%;
+    font-weight: 600;
+    font-family: Calibri Light;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.first:hover .first-two p {
+    opacity: 1;
+}
+
+.first-two h2 {
+    cursor: grab;
+    padding: 12px;
+    font-size: 3rem;
+    font-family: Urdu Typesetting;
+    color: #f0ae48;
+}
+
+.line {
+    width: 100%;
+    margin: auto;
+    transition: all 1s;
+    background-color: #ffffff;
+}
+
+hr {
+    position: relative;
+    top: 5rem;
+    color: #f0ae48;
+    border-color: #f0ae48;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #f0ae48;
+    background-color: #f0ae48;
+    transition: all .5s;
+    text-shadow: 0 0 0 gray;
+}
+
+.line:hover hr {
+    border-radius: 0;
+    height: 2px;
+    width: 50%;
+    margin: auto;
+}
+
+/* ---------------------------------------second section---------------------------------------- */
+.second-all {
+
+    background-color:#ffffff;
+    /* border-radius: 30px; */
+
+}
+
+.second {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+
+.second-one {
+    width: 50%;
+}
+
+.one-first {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 60px;
+    align-items: center;
+}
+
+h5 {
+    font-family: Calibri Light;
+    font-size: 1.5rem;
+}
+
+.one-first i {
+    cursor: pointer;
+}
+
+.one-p {
+
+    background: black;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    display: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.one-second {
+    background-color: #56A679;
+    margin-top: 1.5rem;
+    transform: translate(100rem, 0);
+    transition: all 1s;
+}
+
+.second:hover .one-second {
+    transform: translate(0, 0);
+}
+
+#textTwo {
+    background: #56A679;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: none;
+}
+
+.one-three {
+    background-color: #007A3D;
+    margin-top: 1.5rem;
+    transform: translate(100rem, 0);
+    transition: all 1s;
+}
+
+.second:hover .one-three{
+    transform: translate(0, 0);
+}
+
+.txt {
+    transform: translate(100rem, 0);
+    transition: all 1s;
+}
+
+ .second:hover .txt {
+    transform: translate(0,0);
+ }
+
+#textThree {
+    background: #007A3D;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    display: none;
+
+}
+
+
+.pt {
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.one-four {
+    background-color: #D01B2F;
+    margin-top: 1.5rem;
+    transition: all 1.5s;
+    transform: translate(100rem, 0);
+}
+
+.second:hover .one-four {
+    transform: translate(0, 0);
+}
+
+#textFour {
+    background: #D01B2F;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+audio {
+    width: 40%;
+    height: 1.4rem;
+    transition: all 2s;
+    opacity: 0;
+    margin: auto;
+}
+
+*:focus,
+audio:hover{
+    outline: none;
+    box-shadow: 0 0 0 2px #f0ae48;
+    border-radius: 30px;
+    outline-offset: 8px;
+}
+
+.second:hover audio {
+    opacity: 1;
+}
+
+.second-two {
+    width: 50%;
+}
+
+.second-two img {
+    width: 95%;
+    position: relative;
+    right: 1.2rem;
+    border-radius: 50%;
+    transition: all .6s;
+}
+
+.second:hover .second-two img {
+    border-radius: 30px;
+}
+
+/* .one-first {
+    transform: translate(100rem,0);
+    transition: all 1s;
+ }
+
+  .second:hover .one-first {
+    transform: translate(0,0);
+  } */
+
+
+  /* 
+      <!-- -------------------------------الشهداء-------------------------------- -->
+  */
+
+  .people {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .head-section h2 {
+    text-align: center;
+    font-weight: 600;
+    font-family: Urdu Typesetting;
+    font-size: 3rem;
+    color: darkslategray;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+  }
+
+  .col-md-4 {
+    width: 30%;
+    box-shadow: 5px 5px 9px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    border-radius: 25px;
+    padding: 2%;
+    height: 25rem;
+    transition: all .5s;
+    transform: scale(0);
+   
+  }
+
+  .people:hover .col-md-4 {
+    transform: scale(1);
+
+  }
+
+  .col-md-4:hover {
+    background-color: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+    letter-spacing: .9px;
+
+  }
+
+  .img-fluid {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .img-fluid img {
+    width: 55%;
+    height: 50%;
+    border-radius: 50%;
+    transition: all .5s;
+  }
+
+  .img-fluid img:hover {
+    transform: scale(1.1);
+  }
+
+  .caption {
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    margin-top: 12%;
+    font-weight: bold;
+  }
+
+  .caption h2 {
+    font-size: 1.5rem;
+    font-family: Calibri Light;
+    font-weight: 600;
+  }
+
+  .name {
+    font-weight: 500;
+    font-family: Urdu Typesetting;
+  }
+
+
+
+
+
+
+@media all and (min-width:1000px) {
+    .first-two {
+        padding-top: 5.5rem;
+    }
+}
+
+
+
+@media all and (max-width:900px) and (min-width:600px) {
+    .first-two p {
+        margin-left: 1rem;
+    }
+}
+
+@media all and (max-width:700px) {
+    .first {
+        display: block;
+        height: 68rem;
+    }
+
+    .first-one {
+        width: 75%;
+        margin-top: 1% !important;
+        margin: auto;
+    }
+
+    .first-two {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .small-5 img {
+        left: 0;
+    }
+
+    .first-one img {
+        transform: translate(55%, 0);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .first:hover .first-one img {
+        transform: translate(0, 0);
+    }
+
+    .first-two p {
+        margin-left: 2rem;
+    }
+
+    .second-one {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .second-two {
+        margin-top: 1rem !important;
+        width: 100%;
+        margin: auto;
+    }
+
+    .second-two img {
+        width: 70%;
+        right: 4rem;
+    }
+
+    .row {
+        display: inherit;
+        margin: auto;
+    }
+
+    .col-md-4 {
+        width: 70%;
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .small-4 p {
+        font-size: 3rem;
+    }
+
+    .nav ul li {
+        font-size: 1rem;
+    }
+
+    .logo h2 {
+        text-align: start;
+        font-size: x-large;
+    }
+    
+    .one-first {
+        width: 88%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .txt {
+        width: 88%;
+        margin: auto;
+    }
+
+}
+/* 
+
+*/
