@@ -1,0 +1,105 @@
+	<div class="tittle1">
+<MARQUEE width="360px"><h1 style="color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >Welcome The Couple  </h1></MARQUEE>
+<br>
+
+<button style="background-color: gray;margin-top: 35%;">Learn More</button>
+</div> 
+<div class="parent">
+<div class="dress">
+	<img src="Images/IMG_20220624_083852_303.jpeg">
+	<h2>dress</h2>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A.</p>
+</div>
+<div class="dress">
+	<img src="مره١.jpeg">
+	<h2>dress</h2>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A.</p>
+</div>
+<div class="dress">
+	<img src="مره١.jpeg">
+	<h2>dress</h2>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A.</p>
+</div>
+<div class="dress">
+	<img src="مره١.jpeg">
+	<h2>dress</h2>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+button{
+	border-style: none;
+	border-radius: 20px;
+	background-color: black;
+	color:#fff;
+	
+}
+.tittle1{
+	background-image: url(مره٤.jpeg);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 98vh;
+    background-color: black;
+	text-align: center;
+	margin: auto;
+	border-radius: 50px;
+}
+.parent{
+	margin-top: 10px;
+	text-align: center;
+    box-sizing: border-box;
+	width: 100%;
+	display: inline-block;
+	border-radius: 100px;
+}
+.dress{
+	text-align: center;
+margin: auto;
+	width: 24%;
+	display: inline-block;
+	border-radius: 100px;
+
+}
+.dress img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

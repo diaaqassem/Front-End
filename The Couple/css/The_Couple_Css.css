@@ -1,0 +1,896 @@
+*{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+} 
+body{
+	font-family: Georgia;
+}
+
+.our_product1_update{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	   text-align: center;
+}
+.child{
+	width: 25rem;
+	font-weight: bolder;
+	font-size: larger;
+	color: white;
+}
+.next{
+	background-color: rgba(23, 30, 71,.5);
+}
+ @media all and(max-width:1000px) and (min-width:660){
+	.pleased1 img{
+		width:19%;
+	}
+	.pleased1 .ballon{
+		width: 18%;
+	}
+	
+} 
+@media all and (max-width:660px) and (min-width:400px){
+	body{
+		background-image: url(../Images/body0.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	background-attachment: fixed;
+	}
+	.child{	color: white;}
+	.suits4 p{
+		overflow: scroll;
+		color: white;
+		font-weight: bold;
+	}
+	.dress4 p{
+		overflow: scroll;
+		font-weight: bold;
+	}
+	
+	.bignavbar{
+		width: 100%;
+		height: 9% !important;
+		padding-top: 4%;
+
+	} 
+	.smallnavbar{
+		padding-top: 1%;
+		font-size: 10px;
+	}
+	
+	.logo img{
+		width: 33%;
+		padding-left:1%;
+		
+	}
+	
+	/* .product1 button, .product3 button {
+		background-color : transparent !important ; 
+		color: white;
+		font-size: unset;
+		border-radius: 5px;
+		font-family: Harlow Solid Italic;
+		padding:1px !important;
+		transition: all 1s !important;
+		/* padding: 10px 20px; */
+	
+	.product1 button:hover, .product3 button:hover{
+		background-color: rgba(23, 30, 71,.9) !important;
+	}
+	
+	 .our_product1 .product2 img ,.our_product1 .product img {
+		margin-top: 33%;
+		width: 85%;
+		height: 100%;
+	}
+	.our_product1 .product2 img{
+		margin-top:20% ;
+	} 
+	
+	h2{
+		font-size: 70%;
+		padding-top: 10%;
+	}
+	.biglayer .layer{
+		width: 100%;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	/* h4{ 
+		position: relative;
+
+	}
+	.welcome{
+		
+		padding-top: 25%;
+	} */
+	.welcome button{
+		padding: 10px 10px;
+	}
+	
+	.side img{
+		width: 50%;
+		height: 20%;
+		border-radius: 30px;
+}
+
+
+	 .suits4{
+		width: 100%;
+	
+	}
+	.pleased1 img{
+		width:17%;
+	}
+	.pleased1 .ballon{
+		width: 16%;
+	}
+	
+	.pill1{
+		width: 8% !important;
+	}
+}
+
+/* ************************mouse************************** */
+.mouse{
+	width: 3.5%;
+	height: 3.5%;
+}
+#mouse1 {
+width: 3.5%;
+height: 3.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------Naviation Bar------------------------------------ */
+.side{
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	right: -95%;
+}
+.side img{
+	width: 5%;
+	border-radius: 30px;
+	transition: all 1s;
+
+}
+.side img:hover{
+transform: rotate(360deg);
+}
+/* -----------------------------Header-------------------------------- */
+.bignavbar{
+	overflow: auto;
+	overflow-y: hidden;
+padding-top: 1%;
+	width: 100%;
+	height: 11%;
+	z-index: 3;
+	margin: auto;
+	font-family: Harlow Solid Italic;
+    /* background-color: transparent; */
+	background-color: rgba(177,195,205,.7);
+	 /* background-color: #2d455d; */
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin-bottom: 8%;
+	position: fixed;
+}
+.logo{
+	/* width: 80%;
+	margin: auto;
+	position: fixed;
+	top: 0%;
+	right:10%;
+	z-index: 0; */
+	float: left;
+	width: 20%;
+
+}
+.smallnavbar{
+	padding-top: 1%;
+	float: left;
+	width: 80%;
+	overflow: auto;
+}
+.smallnavbar ul li a{
+	text-decoration: none;
+	color: #2196f3;
+	/* color:black; */
+	float: right;
+	/* background-color: #2d455d; */
+    /* border-radius: 5px;
+    border: solid #0000f8 .5px; */
+	font-size: medium;
+
+}
+.smallnavbar ul li{
+	float: right;
+	padding-right: 3%;
+}
+.smallnavbar ul li a:hover{
+	color: #171e47;
+	padding-top: 4%;
+
+}
+.logo img{
+	width:35%;
+	/* padding-top: 5%; */
+}
+.smallnavbar ul{
+	
+	
+	overflow: auto;
+	list-style: none;
+}
+
+
+/* --------------------------WElcome-------------------------- */
+ .pill1{
+	position: absolute;
+	border-radius: 22px;
+    bottom: 5px;
+	width: 3%;
+    border: solid #f3e8e8 2.5px;
+	background-color: transparent !important;
+	left:47.5%;
+	display: flex;
+	justify-content: center;
+
+	top: 92%;
+
+overflow-x: visible !important;
+ }
+ .dot{
+	width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: #fafa0e;
+    animation: move 2s infinite;
+ }
+ @keyframes move{
+	0%{
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(10px);
+	}
+ }
+.welcome{
+	background-image: url(../Images/header.jpg);
+	background-attachment: fixed;
+	background-color: rgba(89, 134, 139, 0.2);
+	background-size: cover;
+	
+	background-size: 100% 100%;
+	text-align: center;
+	/*  */
+	width: 100%;
+	height: 100vh;
+	border-radius: 3.5%;
+ }
+ .welcome a{
+	text-decoration: none;
+ }
+ .welcome button{
+	padding: 20px 30px;
+	border:dashed pink 3px;
+	border-radius: 8px;
+	color: #fff;
+	background-color: transparent;
+	/* margin-top: 7%; */
+	position: relative;
+	top: 50%;
+ }
+ .welcome button:hover{
+	background-color: #d0ab74;
+	color: #2d455d;
+	font-weight: bolder;
+ }
+ 
+ h4{
+	font-family: Castellar;
+	color:#63afae;
+	font-weight: bold;
+	/* padding-top: 20%  ; */
+	position: relative;
+	top: 30%;
+ }
+ h1{
+	font-weight: bolder;
+	font-family: Castellar;
+	color:#ffffff;
+	position: relative;
+	top: 34%;
+ }
+ /* -----------------------Our Product------------------------- */
+ 
+ .span{
+font-weight: bolder;
+font-size: larger;
+ }
+ .font_product{
+	font-size: larger;
+font-family: High Tower Text;
+ }
+ 
+ 
+
+ .cont{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+ }
+ 
+ .cont1 h3{
+	text-align: center;
+	color: #63afae;
+	transform: rotate(-2deg);
+    text-shadow: 5px 10px 5px #171e47;
+}
+
+ .cont1 button{
+	margin-left: 48%;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* .our_product1{
+
+	width: 100%;
+	margin: auto;
+margin-top: 30%;
+margin-bottom: 10%;
+	box-sizing: border-box;
+	overflow: auto;
+	padding-left: 18%;
+	border-radius: 30px;
+
+	
+ }
+ .product1{
+
+	margin-top:5%;
+	width: 50%;
+	float: left;
+ }
+ .product1 button,.product3 button{
+	background-color: rgb(23, 30, 71);
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+ }
+  .product1 p ,.product3 p{
+	 font-size: larger; 
+ }
+ .product2{
+	width: 50%;
+	float: left;
+ }
+ .our_product1 h3{
+	font-family: Bodoni MT black;
+	
+ }
+ .product2 img ,.product img {
+	margin-top: 17%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+ }
+ .product1 h3{
+	padding-top: 20%;
+ } */
+ /* ******************Product Of Dresses******************* */
+ .dresses{
+  overflow: auto;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(232, 179, 191,.7);
+
+  border-radius: 40px;
+}
+.layer{
+    margin-right: 15%;	
+	position: absolute;
+    border-radius: 50%;
+    top: 0;
+    padding-top: 10%;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    opacity: 0;
+	transition: all 2s 1s;
+
+}
+.layer:hover {
+	opacity: 1;
+background-color: rgba(218, 213, 210,.2);
+
+}
+/* .dress1{
+	float: left;
+	width: 25%;
+}
+.dress1 img{
+	width: 40%;
+	border-radius: 50%;
+}
+.dress2{
+	float: left;
+	width: 25%;
+}
+.dress2 img{
+	width: 85%;
+	border-radius: 50%;
+}
+.dress3{
+	float: left;
+	width: 25%;
+}
+.dress3 img{
+	width: 85%;
+	border-radius: 50%;
+} */
+.dress4{
+	float: left;
+	width: 24.6%;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+
+
+}
+.dress4 img{
+	width:70%;
+	border-radius: 50%;
+	transition: all 2s;
+	overflow: hidden;
+}
+.dress4  img:hover ,.biglayer:hover{
+	transform: scale(1.2,1.2);
+
+}
+.biglayer img{
+	width: 100%;
+}
+.biglayer{
+	position: relative;
+ width: 70%;
+ margin: auto;
+ text-align: center;
+ border-radius: 50%;
+ box-sizing: border-box;
+ overflow: hidden;
+ transition: all 2.5s;
+
+
+}
+.dress4 button{
+	background-color:transparent;
+	color:  rgb(23, 30, 71);
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+.dress4 button:hover{
+background-color: aqua;
+}
+
+.brbr{
+	width: 2px;
+    height: 350px;
+    background-color: pink;
+	float: left;
+}
+h4{
+	font-size: large;
+	color: rgb(255, 255, 255) !important;
+	/* text-decoration: underline;
+	text-decoration-style: dashed; */
+}
+.dresses p{
+	font-weight: 200px;
+	font-family: Felix Titling;
+	padding: 20px 0;
+}
+/* *******************************Suits************************** */
+.suits{
+	overflow: auto;
+	margin: auto;
+	text-align: center;
+	/* display: flex; */
+	flex-direction: row-reverse;
+	width: 100%;
+	box-sizing: border-box;
+	background-color:rgba(38, 85, 129,.4);
+	border-radius: 30px;
+}
+.suits4{
+	float: left;
+	width: 24%;
+	text-align: center;
+	margin: auto;
+	
+}
+.suits img{
+	width:70%;
+	border-radius: 50%;
+}
+.suits button{
+	background-color:transparent;
+	color:  rgb(23, 30, 71);
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.suits button:hover{
+	background-color: aqua;
+
+}
+.suits p{
+	font-weight: 200px;
+	font-family: Felix Titling;
+	padding: 20px 0;
+}
+
+/* .product{
+	width: 50%;
+	float: right;
+}
+.product3{
+	padding-top: 13%;
+	font-size:20px;
+	width: 50%;
+	float: right;
+} */
+/* div{
+visibility: hidden;
+} */
+/* -------------------------------------present----------------------------- */
+.present{
+	background-color: #fff;
+
+	width: 100%;
+	height: 80vh;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	display: flex;
+	flex-flow: row-reverse nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	position: absolute;
+	opacity: 0;
+	transition-duration: 2s;
+}
+.child_present{
+	
+	width: 20%;
+	/* height: 20%; */
+	border-radius: 30px;
+animation: moving 5s  2s infinite alternate ;
+position: relative;
+}
+.present:hover{
+	opacity: 1;
+}
+.child_present1{
+	
+	width: 20%;
+	/* height: 20%; */
+	border-radius: 30px;
+animation: moving 5s  3s infinite alternate ;
+position: relative;
+}
+.child_present2{
+	
+	width: 20%;
+	/* height: 20%; */
+	border-radius: 30px;
+animation: moving 5s  100000000000000s infinite alternate ;
+position: relative;
+}
+.child_present3{
+	
+	width: 20%;
+	/* height: 20%; */
+	border-radius: 30px;
+animation: moving 5s  5s infinite alternate ;
+position: relative;
+}
+.child_present img{
+	width: 100%;
+	border-radius: 30px;
+
+}
+.child_present1 img{
+	width: 100%;
+	border-radius: 30px;
+
+}
+.child_present2 img{
+	width: 100%;
+	border-radius: 30px;
+
+}
+.child_present3 img{
+	width: 100%;
+	border-radius: 30px;
+
+}
+.cont img{
+	border-radius: 5px;
+}
+@keyframes moving {
+	0%{
+		top: -63%;
+	}
+	100%{
+		top:0%
+	}
+}
+/* *************pleased to meet you******************************** */
+.pleased{
+	width: 80%;
+	height: 100vh;
+	margin: auto;
+	background-size: 100% 100%;
+	
+	border-radius: 6%;
+}
+.pleased1{
+	background-color: white;width: 100%;height: 100vh;margin: auto;padding: 0;margin: 0;
+	position: relative;
+	border-radius: 6%;
+}
+.pleased1 img{
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: 2;
+transition-property: all;
+transition-duration: 5s;
+
+border-radius: 50%;
+}
+.pleased1 .ballon{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition-property: all;
+transition-duration: 3s;
+border-radius: 50%;
+}
+
+.pleased1 img{
+	width:17%;
+}
+.pleased1 .ballon{
+	width: 16%;
+}
+.pleased1:hover img{
+
+transform:translateY(-30rem)
+}
+
+/* ************fotter********************************* */
+
+/* footer .to-top i {
+    color: #fff;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+} */
+footer{
+    text-align: center;
+    height: 80vh;
+    border-radius: 37px;
+
+    padding-top: 0%;
+    background-color: rgb(128 128 128 / 80%);
+	margin-top: 8%;
+}
+footer a{
+	text-decoration: none;
+	margin: 1%;
+	transition: all 1s;
+}
+footer a i {
+	font-size: x-large;
+	color:#f1e13e;
+	transition-property: all;
+	transition-duration: 2s;
+}
+footer a i:hover {
+	
+	color: #000;
+}
+/* footer .qr .qr2{
+	display: inline-block;
+	margin: 0%;
+	padding: -14%;
+} */
+footer .qr{
+	font-size: x-large;
+	color:#f1e13e;
+
+margin: 1%;
+}
+footer .qr:hover{
+	color: #000;
+
+}
+footer .qr .qr2 img{
+	opacity: 0;
+	width: 10%;
+	height: 5%;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 1s;
+	display: none;
+	
+}
+
+footer .qr:hover .qr2 img{
+	
+	opacity: 1;
+	z-index: 222;
+margin-left: 22%;
+	display: unset;
+
+}
+
+
+
+
+
+.bignavbar {
+	display: flex;
+	align-items: center;
+}
+
+
+@media all and (max-width:400px){
+	body{
+		overflow-x: hidden;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.smallnavbar {
+		padding-right:2%;
+		padding-left: 1%;
+	}
+	.side{
+		width: 100%;
+		position: fixed;
+		top: 50%;
+		right: -95%;
+	}
+	body{
+		background-image: url(../Images/body0.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+	/* .welcome{
+		padding-top: 25%;
+	} */
+	.bignavbar{
+		width: 100% ;
+		padding-top: 2%;
+		height: 8% !important;
+	}
+	.welcome button{
+		padding: 10px 10px;
+	}
+	.product1 button, .product3 button {
+		background-color: transparent;
+		color: white;
+		font-size: unset;
+		border-radius: 5px;
+		font-family: Harlow Solid Italic;
+		padding:3px;
+		transition: all 1s;
+		/* padding: 10px 20px; */
+	}
+	.product1 button:hover, .product3 button:hover{
+		background-color: rgba(23, 30, 71,.9);
+	}
+	.product1 p, .product3 p {
+		font-size: medium;
+		font-weight: 450;
+	}
+	.our_product1 .product2 img ,.our_product1 .product img {
+		margin-top: 33%;
+		width: 85%;
+		height: 100%;
+	}
+	.our_product1 .product2 img{
+		margin-top:20% ;
+	}
+	.dresses .dress4{
+		width:100%;
+
+	}
+	.suits .suits4{
+		width: 100%;
+	}
+	.bignavbar .smallnavbar ul li a{
+		font-size: 60%;
+	}
+	.bignavbar .logo img{
+		margin-left: 9%;
+		padding: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+	.bignavbar .logo{
+		display: flex;
+		align-items: center;
+	}
+	.pleased1 img{
+		width:10%;
+	}
+	.pleased1 .ballon{
+		width: 9%;
+	}
+	.biglayer{
+		position: relative;
+	 width: 70%;
+	 margin: auto;
+	 text-align: center;
+	 border-radius: 50%;
+	 box-sizing: border-box;
+	 overflow: hidden;
+	 transition: all 2.5s;
+	
+	
+	}
+	.dress4 img{
+		width:70%;}
+		.biglayer img{
+			width: 100%;
+		}
+		.pill1{
+			width: 8% !important;
+		}
+}
