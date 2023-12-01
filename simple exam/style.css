@@ -1,0 +1,134 @@
+*{
+    font-family: Times New Roman (Headings CS);
+    /* background:linear-gradient(black,red,black,black,black); */
+    color: rgb(0, 0, 0);
+
+
+}
+
+body{
+    background-image: url(./7.jpg);
+    background-size: 100% 100%;    overflow: hidden;
+}
+.que1{
+    
+    padding-top: 2rem !important;
+}
+
+h3 {
+    font-style: italic;
+    text-shadow: 1px 1px 20px gray;
+    font-weight: 400;
+}
+
+#b1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 5rem !important;
+    text-align: end;
+}
+.q2{
+    position: relative;
+    top: 12rem;
+}
+nav a{
+    color: rgb(0, 0, 0) !important;
+    font-weight: bolder !important;
+}
+nav a:hover{
+    color: blue !important;
+}
+.btn{
+    color: rgb(0, 0, 0) ;
+    font-weight: bold !important;
+   transition: all 1s !important;
+  
+}
+#ans1{
+    z-index: 3 !important;
+}
+.btn:hover{
+    letter-spacing: 3px;
+    color: rgb(0, 0, 255) !important;
+}
+.nav{
+    background-color: aliceblue;
+    width: 60%;
+    margin: auto;
+}
+@media all and (max-width:900px){
+    h5{
+        font-size: 3rem !important;  
+    }
+}
+
+#next button{
+    /* position: relative !important;
+    top: 20rem !important; */
+background-color: aquamarine;
+transition: all 1s;
+width: 10rem;
+border: 2px 2px blue solid;
+
+}
+#next button:hover{
+    color: white !important;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+    background-color:rgb(62, 255, 62);
+
+    color-scheme: 1;
+}
+#next{
+    text-align: center;
+    position: relative !important;
+    top: 15rem !important;
+   
+    width: 100%;
+    margin: auto;
+}
+.con1{
+    background-image: url(بالون_ازرق.png);
+    background-size: 100% 100%;
+    width: 8%;
+    border-radius: 50%;
+    height: 100%;
+   
+    position: relative;
+}
+.con2{
+    background-image: url(بالون_اصفر.png);
+    width: 8%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    
+    position: relative;
+}
+.con{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    position: relative;
+    top: 32rem;
+  
+}
+@keyframes moving{
+    0%{
+top: -1200%;
+    }
+    100%{
+        top: 440%;
+    }
+}
+
+
+#que1{
+    display: inherit;
+}
+#que2{
+    display: none;
+}
