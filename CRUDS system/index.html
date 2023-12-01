@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+        <title>CRUD_System</title>
+    </head>
+      
+    <body style="font-family: Georgia;background-color: rgba(128,128,128,.6);">
+<div style="border-radius:20px ;" class="w-75 m-auto  border  m-5 p-5">
+    <div class="w-100 m-auto text-center">
+    <h1 style="	text-align: center;
+	color: #ffffff;
+    font-weight: bolder;
+	transform: rotate(-2deg);
+    text-shadow: 5px 10px 5px #171e47;" class="mb-4  ">CRUD Syatem</h1>
+    </div>
+    
+    <div class="form-group">
+        <label>Product_ Name</label>
+        <input id="ProductName" class="form-control " type="text">
+        <div class="alert alert-danger d-none"  id="alert" role="alert">
+            <strong>please Enter first letter Capital</strong>
+        </div>
+    </div>
+    <div class="form-group my-3">
+        <label>Produc_tPrice</label>
+        <input id="ProductPrice" class="form-control" type="number">
+        <div class="alert alert-danger d-none"  id="alertp" role="alert">
+            <strong>please Enter Price</strong>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Product_Description</label>
+        <textarea id="ProductDescription" class="form-control" type="text" cols="173" rows="8"></textarea>
+        <div class="alert alert-danger d-none " id="alertc" role="alert">
+            <strong>please Enter dDescription Of Element</strong>
+        </div>
+    </div>
+    <div class="w-100 m-auto text-center">
+    <button style="color:#ffffff;font-family:Viner Hand ITC;" class="btn btn-info btn-lg mt-4" onclick="addproduct();" id="Add">Add</button>
+</div>
+</div>
+
+<div style="width:75%; margin:auto;text-align: center;margin-top: 5%;">
+    <label style="border-radius: 5x;font-family:Viner Hand ITC;">search</label>
+<input type="text" id="searchinput" onkeyup="search();" class="form-control w-25 mx-auto mb-5" style="size: 30%; ;">
+</div>
+
+<table   class="  mt-5 w-75 m-auto border-primary bg-light table-striped table text-center    " style="border-radius: 20px; " >
+    <thead style="border-radius: 20px; ">
+        <th style="color: red;
+        font-weight: bolder;">Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th style="background-color: red;color:#ffffff;border: radious 5px;">Delete</th>
+        <th class="text-info">Update</th>
+    </thead >
+    <tbody id="tbody" >
+
+    </tbody>
+</table>
+
+
+<footer class="d" style=" background-color: rgba(0,0,0,.6);
+color: white;
+width: 100%;
+height: 50%;text-align:center;
+border-radius: 25px;
+margin-top: 5%;padding-top: 6%;">
+   
+    <div class="d2">
+
+        
+
+    </div>
+    <time datetime="14:00">3:13am</time>
+  <p class="d3" style="margin-bottom: 0;padding-bottom:5%;">
+    <br/><br/><br/><br/>
+   
+<u><b>CONTACT ME</u></b>
+<br/><br/>
+<!-- call: 01027188682 -->
+<br/>
+<br/>
+Email: <a href="
+https://wa.me/qr/KILJJNNBMONRB1
+" style="text-decoration: none;">WhatsApp</a>
+
+<!-- Address: Kafr El-Sheikh governorat -->
+</p>
+</footer>
+
+
+
+
+
+            <script src="CRUD.js"></script>
+        </body>
+  
+</html>
